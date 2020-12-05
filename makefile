@@ -1,4 +1,4 @@
-FILENAME = blink85
+FILENAME = sweep
 PORT = /dev/spidev0.0
 DEVICE  = attiny85
 PROGRAMMER = linuxspi

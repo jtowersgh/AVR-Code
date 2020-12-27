@@ -1,11 +1,11 @@
 /*
- * ADCexample.c
+ * tinyADC.c
  *
- * Created: 8/12/2020 15:27
+ * Created: 12/20/2020 16:39
  * Author: Jeff
  */
 
-#define F_CPU  16000000
+#define F_CPU  8000000
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
@@ -14,7 +14,7 @@ double dutyCycle = 0;
 
 int main(void)
 {
-	DDRD = (1 << PORTD6);
+	DDRB = (1 << PB3);
 
 	TCCR0A = (1 << COM0A1) | (1 << WGM00) | (1 << WGM01);
 	TIMSK0 = (1 << TOIE0);

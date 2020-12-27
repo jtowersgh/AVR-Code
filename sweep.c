@@ -27,7 +27,11 @@
 #include <math.h>
 
 uint32_t elapsedCount = 0;
+<<<<<<< HEAD
 volatile uint16_t periodIncrement = 0; 
+=======
+volatile uint8_t periodIncrement = 0; 
+>>>>>>> 80c719a59f215dc555948a2d3faf2bb8db564cfc
 uint8_t sweepCount = 0;
 volatile int elapseFlag = 0;
 uint16_t periodMatchCount = 40000;
@@ -76,7 +80,11 @@ int main(void)
             }
         }
         
+<<<<<<< HEAD
         if(periodIncrement > 57)
+=======
+        if(periodIncrement > periodMatchCount)
+>>>>>>> 80c719a59f215dc555948a2d3faf2bb8db564cfc
         {
             PORTB ^= 1<< PINB3;
             periodIncrement = 0;

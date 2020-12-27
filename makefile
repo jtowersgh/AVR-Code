@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 FILENAME = toneadj
+=======
+FILENAME = sweep
+>>>>>>> 80c719a59f215dc555948a2d3faf2bb8db564cfc
 PORT = /dev/spidev0.0
 DEVICE  = attiny85
 PROGRAMMER = linuxspi

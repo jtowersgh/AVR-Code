@@ -1,7 +1,7 @@
 /*
  * _8bitTimer.c
- *
- *
+ * To calculate for AVR Timer:
+ * https://eleccelerator.com/avr-timer-calculator/
  * Author: Jeff
  */
 
